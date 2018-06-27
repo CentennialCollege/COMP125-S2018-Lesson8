@@ -1,31 +1,10 @@
 // core module - IIFE
-(function() {
+(function () {
   // App variables
   let person;
   let student;
+  let newPerson;
 
-  /*
-  let Student = (function() {
-    function Student(name, age, studentID) {
-      objects.Person.call(this, name, age);
-      this._studentID = studentID;
-    }
-
-    // extends the Person class or inherit from the person class
-    Student.prototype = Object.create(objects.Person);
-    //Student.prototype.constructor = Student;
-
-    Student.prototype.saysHello = function() {
-      console.log(`${this._name} says Hello`);
-    };
-
-    Student.prototype.studies = function() {
-      console.log(`${this._name} is studying!`);
-    };
-
-    return Student;
-  })();
-  */
 
   /**
    * This function is used for Intialization
@@ -52,12 +31,12 @@
     console.log(`%c App Started...`, "font-weight: bold; font-size: 20px;");
 
     person.saysHello();
-
     console.log(person);
 
-    console.log(student);
+
     student.studies();
     student.saysHello();
+    console.log(student);
   }
 
   window.addEventListener("load", Start);
