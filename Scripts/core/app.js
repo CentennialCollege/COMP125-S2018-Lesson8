@@ -2,7 +2,7 @@ let core;
 // core module - IIFE
 (function(core) {
   // App variables
-  let myObject;
+  //let myObject;
 
   /**
    * This function is used for Intialization
@@ -13,7 +13,7 @@ let core;
       "font-weight: bold; font-size: 20px;"
     );
 
-    myObject = {}; // object literal notation
+    //myObject = {}; // object literal notation
     //myObject = new Object(); // constructor notation
 
     //myObject = Object.create(null);
@@ -25,6 +25,7 @@ let core;
     */
 
     // private properties
+    /*
     Object.defineProperty(myObject, "_name", {
       configurable: false,
       enumerable: false,
@@ -61,6 +62,7 @@ let core;
         this._age = newValue;
       }
     });
+    */
 
     Main();
   }
@@ -71,11 +73,6 @@ let core;
    */
   function Main() {
     console.log(`%c App Started...`, "font-weight: bold; font-size: 20px;");
-
-    myObject.name = "Tom";
-    myObject.age = 49;
-
-    console.log(myObject);
   }
 
   window.addEventListener("load", Start);
